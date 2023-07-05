@@ -9,8 +9,8 @@
 #define SIZE(n) ((int)(floor(log10(n)) + 1))
 #define BEGIN_PRIME  32000
 #define LIMIT_PRIME  10000000
-#define LENGTH_PRIME 100000
-#define LENGTH_COMP  100000
+#define LENGTH_PRIME 10000
+#define LENGTH_COMP  10000
 
 
 typedef struct M

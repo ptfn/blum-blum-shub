@@ -3,9 +3,12 @@
 
 int main()
 {
+    FILE *file = fopen("file.txt", "w");
     init();
 
-    for (int i = 0; i < 50; i++)
-        printf("%ld ", rnd());
-    putchar('\n');
+    for (long long i = 0; i < 2e8; i++)
+        fprintf(file, "%ld\n", rnd()%1000);
+
+    fclose(file);
+    return 0; 
 }
